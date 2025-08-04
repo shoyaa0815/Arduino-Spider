@@ -1,128 +1,47 @@
-void MoveFw(int SpeedDelay) {
-  L_F_3_servo.write(60); 
-  R_M_3_servo.write(120);
-  L_B_3_servo.write(60);
-  delay(SpeedDelay);
+void MoveFw() {
+  LeftLeg[0].write(45);
+  RightLeg[0].write(135);
+  LeftLeg[1].write(45);
+  RightLeg[1].write(135);
+  delay(500);
 
-  L_F_1_servo.write(60);
-  R_M_1_servo.write(120);
-  L_B_1_servo.write(60);
-  delay(SpeedDelay);
-
-  L_F_3_servo.write(90);
-  R_M_3_servo.write(90);
-  L_B_3_servo.write(90);
-  delay(SpeedDelay);
-
-  R_F_3_servo.write(120);
-  L_M_3_servo.write(60);
-  R_B_3_servo.write(120);
-  delay(SpeedDelay);
-
-  R_F_1_servo.write(120);
-  L_M_1_servo.write(60);
-  R_B_1_servo.write(120);
-  delay(SpeedDelay);
-  
-  R_F_3_servo.write(90);
-  L_M_3_servo.write(90);
-  R_B_3_servo.write(90);
-  delay(SpeedDelay);
+  LeftLeg[0].write(90); 
+  RightLeg[0].write(90);
+  LeftLeg[1].write(90);
+  RightLeg[1].write(90);
+  delay(500);
 }
 
-void MoveBw(int SpeedDelay) {  
-  L_F_3_servo.write(60);
-  R_M_3_servo.write(120);
-  L_B_3_servo.write(60);
-  delay(SpeedDelay);
+void MoveBw() {
+  LeftLeg[0].write(135);
+  RightLeg[0].write(45);
+  LeftLeg[1].write(135);
+  RightLeg[1].write(45);
+  delay(500);
 
-  L_F_1_servo.write(120);
-  R_M_1_servo.write(60);
-  L_B_1_servo.write(120);
-  delay(SpeedDelay);
-
-  L_F_3_servo.write(90);
-  R_M_3_servo.write(90);
-  L_B_3_servo.write(90);
-  delay(SpeedDelay);
-
-  R_F_3_servo.write(120);
-  L_M_3_servo.write(60);
-  R_B_3_servo.write(120);
-  delay(SpeedDelay);
-
-  R_F_1_servo.write(60);
-  L_M_1_servo.write(120);
-  R_B_1_servo.write(60);
-  delay(SpeedDelay);
-
-  R_F_3_servo.write(90);
-  L_M_3_servo.write(90);
-  R_B_3_servo.write(90);
-  delay(SpeedDelay);
+  LeftLeg[0].write(90);
+  RightLeg[0].write(90);
+  LeftLeg[1].write(90);
+  RightLeg[1].write(90);
+  delay(500);
 }
 
-void SlideL(int SpeedDelay) {  
-  L_F_3_servo.write(60);
-  L_M_3_servo.write(60);
-  L_B_3_servo.write(60);
-  delay(SpeedDelay);
+void SlideLeft() {
+  LeftLeg[0].write(45);
+  RightLeg[5].write(135);
+  delay(500);
 
-  R_F_1_servo.write(120);
-  R_M_1_servo.write(120);
-  R_B_1_servo.write(120);
-  delay(SpeedDelay);
-
-  L_F_3_servo.write(90);
-  L_M_3_servo.write(90);
-  L_B_3_servo.write(90);
-  delay(SpeedDelay);
-
-  R_F_3_servo.write(120);
-  R_M_3_servo.write(120);
-  R_B_3_servo.write(120);
-  delay(SpeedDelay);
-
-  L_F_1_servo.write(60);
-  L_M_1_servo.write(60);
-  L_B_1_servo.write(60);
-  delay(SpeedDelay);
-
-  R_F_3_servo.write(90);
-  R_M_3_servo.write(90);
-  R_B_3_servo.write(90);
-  delay(SpeedDelay);
+  LeftLeg[0].write(90);
+  RightLeg[5].write(90);
+  delay(500);
 }
 
+void SlideRight() {
+  LeftLeg[4].write(135);
+  RightLeg[2].write(45);
+  delay(500);
 
-void SlideR(int SpeedDelay) {
-  R_F_3_servo.write(120);
-  R_M_3_servo.write(120);
-  R_B_3_servo.write(120);
-  delay(SpeedDelay);
-
-  L_F_1_servo.write(60);
-  L_M_1_servo.write(60);
-  L_B_1_servo.write(60);
-  delay(SpeedDelay);
-
-  R_F_3_servo.write(90);
-  R_M_3_servo.write(90);
-  R_B_3_servo.write(90);
-  delay(SpeedDelay);
-  
-  L_F_3_servo.write(60);
-  L_M_3_servo.write(60);
-  L_B_3_servo.write(60);
-  delay(SpeedDelay);
-
-  R_F_1_servo.write(120);
-  R_M_1_servo.write(120);
-  R_B_1_servo.write(120);
-  delay(SpeedDelay);
-  
-  L_F_3_servo.write(90);
-  L_M_3_servo.write(90);
-  L_B_3_servo.write(90);
-  delay(SpeedDelay);
+  LeftLeg[4].write(90);
+  RightLeg[2].write(90);
+  delay(500);
 }
