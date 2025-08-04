@@ -13,7 +13,7 @@
 
 const int Num_Servos = 18;
 
-int servoPins[Num_Servos] = {
+int ServoPins[Num_Servos] = {
   2, 3, 4,   // ขาพินสำหรับ Left Front (L_F_1, L_F_2, L_F_3)
   5, 6, 7,   // ขาพินสำหรับ Left Middle (L_M_1, L_M_2, L_M_3)
   8, 9, 10,  // ขาพินสำหรับ Left Back (L_B_1, L_B_2, L_B_3)
@@ -55,7 +55,7 @@ void setup() {
   Serial.println("Set Servo "); 
 
   for (int i = 0; i < Num_Servos; i++) {
-    AllServos[i].attach(servoPins[i]);
+    AllServos[i].attach(ServoPins[i]);
   }
   
   for (int i = 0; i < Num_Servos; i++) {
